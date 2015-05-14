@@ -21,10 +21,11 @@
 			<th>Tarefas</th>
 		</tr>
 		<?php foreach ($lista_tarefas as $tarefa) : ?>
-			<tr>
-				<td><?php echo $tarefa; ?> </td>
-			</tr>
+		<tr>
+			<td><?php echo $tarefa; ?> </td>
+		</tr>
 		<?php endforeach; ?>
+		
 	</table>
 </body>
 </html>
