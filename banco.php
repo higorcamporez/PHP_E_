@@ -19,5 +19,16 @@ function buscar_tarefas($conexao)
 	}
 	return $tarefas;
 }
+function gravar_tarefa($conexao, $tarefa)
+{
+	$sqlGravar = "
+	INSERT INTO tarefas
+	(nome)
+	VALUES
+	(	'{$tarefa['nome']}'
+		)
+";
+mysqli_query($conexao, $sqlGravar);
+}
 
 ?>
