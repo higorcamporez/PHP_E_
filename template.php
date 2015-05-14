@@ -22,7 +22,7 @@
 		</tr>
 		<?php foreach ($lista_tarefas as $tarefa) : ?>
 		<tr>
-			<td><?php echo $tarefa; ?> </td>
+			<td><?php echo $tarefa['nome']; ?> </td>
 		</tr>
 		<?php endforeach; ?>
 		
